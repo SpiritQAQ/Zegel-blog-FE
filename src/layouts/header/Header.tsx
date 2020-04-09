@@ -9,14 +9,15 @@ const _ = require('lodash/function');
 const stickyFunc = () => {
 
   // 监听滚动控制header背景颜色回调函数
-  const className = 'header-bg-transparent'
+  const transparentClassName = 'header-bg-transparent'
   const gradientClassName = 'header-bg-gradient'
   if (window.pageYOffset > 500) return
   if (window.pageYOffset > 100) {
-    (document.querySelector('.header-bg') as HTMLInputElement).classList.remove(className);
+    (document.querySelector('.header-bg') as HTMLInputElement).classList.remove(transparentClassName);
     (document.querySelector('.header-bg') as HTMLInputElement).classList.add(gradientClassName)
   } else {
-    (document.querySelector('.header-bg') as HTMLInputElement).classList.add(className);
+    if (!(document.querySelector('.header-bg') as HTMLInputElement).classList.value.includes('gradient')) return
+    (document.querySelector('.header-bg') as HTMLInputElement).classList.add(transparentClassName);
     (document.querySelector('.header-bg') as HTMLInputElement).classList.remove(gradientClassName)
   }
 }
@@ -51,7 +52,7 @@ export default class Header extends React.Component {
             <div onClick={this.showLoginContainer}>登录</div>
           </li>
         </ul>
-        <div className="header-bg header-bg-transparent "></div>
+        <div className="header-bg "></div>
       </header>
     )
   }

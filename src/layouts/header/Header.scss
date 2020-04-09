@@ -2,9 +2,9 @@
 $headerBgColor: orange;
 $headerFilter: saturate(180%) blur(1em);
 // $headerBgColor: linear-gradient(90deg, rgba(247, 149, 51, 0.101961) 0, rgba(243, 112, 85, 0.101961) 15%, rgba(239, 78, 123, 0.101961) 30%, rgba(161, 102, 171, 0.101961) 44%, rgba(80, 115, 184, 0.101961) 58%, rgba(16, 152, 173, 0.101961) 72%, rgba(7, 179, 155, 0.101961) 86%, rgba(109, 186, 130, 0.101961) 100%);
-$headerBgColor: #6b6b8344;
+$headerBgColor: #3b8d99;
 /* fallback for old browsers */
-$headerBgColor: -webkit-linear-gradient(to right, #3b8c9949, #6b6b8344, #aa4b6b41);
+$headerBgColor: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
 /* Chrome 10-25, Safari 5.1-6 */
 $headerBgColor: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -37,7 +37,7 @@ header {
 
 .header-bg-transparent {
   animation: toTransparent 0.2s ease-in-out;
-  animation-iteration-count: 1;
+  // animation-iteration-count: 1;
   // opacity: 0 !important;
 }
 
@@ -46,7 +46,7 @@ header {
 
   opacity: $bgOpacity;
   animation: fromTransparent 0.3s ease-in-out;
-  animation-iteration-count: 1;
+  // animation-iteration-count: 1;
 }
 
 @keyframes toTransparent {

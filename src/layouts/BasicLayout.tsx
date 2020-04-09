@@ -33,7 +33,7 @@ export default class BasicLayout extends React.PureComponent {
               of them to render at a time
             */
           }
-          <Switch >
+          <Switch>
             <Route exact path="/" >
               <Index />
             </Route>

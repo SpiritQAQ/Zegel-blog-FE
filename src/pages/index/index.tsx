@@ -1,11 +1,12 @@
 import * as React from 'react'
 import './index.scss'
+import IndexHeader from '../../components/index/IndexHeader'
 
 class IndexComp extends React.Component<object> {
   render() {
     return (
       <main>
-        <div className="headerBG"></div>
+        <IndexHeader />
         <div className="indexContainer">
           <div className="indexCard"></div>
         </div>

@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Header from './header/Header'
 import Index from '../pages/index/index'
-import ArticalPage from '../pages/artical/index'
+import ArticleListPage from '../pages/artical/ArticleListPage'
 
 function About() {
   return (
@@ -40,8 +40,8 @@ export default class BasicLayout extends React.PureComponent {
             <Route path="/about" >
               <About />
             </Route>
-            <Route path="/artical" >
-              <ArticalPage />
+            <Route path="/articles" >
+              <ArticleListPage />
             </Route>
           </Switch>
         </div>

@@ -43,7 +43,7 @@ export default class Header extends React.Component {
             <Link to="/">首页</Link>
           </li>
           <li>
-            <Link to="/artical">文章</Link>
+            <Link to="/articles">文章</Link>
           </li>
           <li>
             <Link to="/about">关于</Link>

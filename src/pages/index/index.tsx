@@ -1,12 +1,12 @@
 import * as React from 'react'
 import './index.scss'
-import IndexHeader from '../../components/index/IndexHeader'
+import PageTitle from '../../layouts/pageTitle/PageTitle'
 
 class IndexComp extends React.Component<object> {
   render() {
     return (
       <main>
-        <IndexHeader />
+        <PageTitle type="index" />
         <div className="indexContainer">
           <div className="indexCard"></div>
         </div>

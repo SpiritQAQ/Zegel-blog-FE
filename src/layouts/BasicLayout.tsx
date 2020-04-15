@@ -24,6 +24,8 @@ export default class BasicLayout extends React.PureComponent {
       <Router>
         <div >
           <Header />
+          <div id="header"></div>
+          <div id="content"></div>
           {
             /*
               A <Switch> looks through all its children <Route>

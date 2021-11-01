@@ -36,7 +36,7 @@ store.subscribe(() => {
 
 const render = (state) => {
   console.log("render -> state", state)
-  document.body.innerHTML += (`<p>${JSON.stringify(state)}</p>`)
+  // document.body.innerHTML += (`<p>${JSON.stringify(state)}</p>`)
 }
 // render(store.getState())
 export { store }

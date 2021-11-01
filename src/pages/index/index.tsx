@@ -7,7 +7,7 @@ class IndexComp extends React.Component<object> {
     return (
       <main>
         <PageTitle type="index" />
-        <div className="indexContainer">
+        <div className="indexContainer main-width-content">
           <div className="indexCard"></div>
         </div>
       </main>

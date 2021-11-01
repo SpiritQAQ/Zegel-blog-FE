@@ -28,9 +28,12 @@ function apiAxios(method: AxiosRequestConfig['method'], url: string, params: obj
         // 	window.location.href = '/#/login'
         // }
         if (res.status === 200) {
-          resolve(res)
+          resolve(res.data)
+          if (!res.data.success) {
+            reject(res.data.message)
+          }
         } else {
-          reject('Axios返回状态不对，查看请求处理过程．．．．')
+          reject('http返回状态不对，查看请求处理过程．．．．')
         }
       }, (err: AxiosError) => {
         reject(err)

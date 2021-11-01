@@ -114,14 +114,6 @@ module.exports = function (webpackEnv) {
           ],
           sourceMap: isEnvProduction && shouldUseSourceMap,
         },
-      },
-      {
-        loader: require.resolve('sass-resources-loader'),
-        options: {
-          resources: [
-            require.resolve('./../src/styles/mainStyles.scss')
-          ]
-        }
       }
     ].filter(Boolean);
     if (preProcessor) {
@@ -137,6 +129,15 @@ module.exports = function (webpackEnv) {
           options: {
             sourceMap: true,
           },
+        },
+        {
+          loader: require.resolve('sass-resources-loader'),
+          options: {
+            resources: [
+              require.resolve('./../src/styles/mainStyles.scss'),
+              require.resolve('./../src/styles/vars.scss'),
+            ]
+          }
         }
       );
     }

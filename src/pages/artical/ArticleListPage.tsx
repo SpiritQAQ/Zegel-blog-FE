@@ -7,7 +7,10 @@ const ArticlePage: React.FC = () => {
   return (
     <>
       <PageTitle type="article" />
-      <ArticleList />
+      <div className="a-page-content main-width-content">
+        <ArticleList />
+      </div>
+
     </>
   )
 }
